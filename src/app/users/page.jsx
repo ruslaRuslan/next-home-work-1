@@ -1,18 +1,18 @@
 import axios from "axios";
+import "./index.css";
 const url = "https://jsonplaceholder.typicode.com/users";
-
 const { data } = await axios.get(url);
 
 export default function index() {
   return (
     <>
-      {data.map(({id, username, address, email}) => {
+      {data.map(({ id, username, address, email }) => {
         return (
           <>
-            <div key={id}>
+            <div key={id} style={{ border: "2px solid grey" }}>
               <h1>{username}</h1>
               <p>{address.city}</p>
-              <a>{email}</a>
+              <a href="#">{email}</a>
             </div>
           </>
         );
@@ -20,5 +20,3 @@ export default function index() {
     </>
   );
 }
-
-

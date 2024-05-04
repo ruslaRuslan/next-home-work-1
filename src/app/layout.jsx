@@ -11,6 +11,7 @@ export default function RootLayout({ children }) {
         {children}
         <div style={{ background: "blue", color: "#fff" }}>FOOTER</div>
       </body>
+      
     </html>
   );
 }
