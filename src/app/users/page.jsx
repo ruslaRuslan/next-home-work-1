@@ -9,7 +9,7 @@ export default function index() {
       {data.map(({ id, username, address, email }) => {
         return (
           <>
-            <div key={id} style={{ border: "2px solid grey" }}>
+            <div key={id} className="container">
               <h1>{username}</h1>
               <p>{address.city}</p>
               <a href="#">{email}</a>
