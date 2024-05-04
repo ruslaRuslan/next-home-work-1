@@ -2,7 +2,7 @@ import React from 'react'
 
 const NotFound = () => {
   return (
-    <div> Xeta bele bir seyfe movcud deyil</div>
+    <div style={{color: "red"}}> Xeta bele bir seyfe movcud deyil</div>
   )
 }
 

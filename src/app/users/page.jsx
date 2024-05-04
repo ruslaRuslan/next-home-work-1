@@ -6,13 +6,13 @@ const { data } = await axios.get(url);
 export default function index() {
   return (
     <>
-      {data.map((user) => {
+      {data.map(({id, username, address, email}) => {
         return (
           <>
             <div key={id}>
-              <h1>{user.username}</h1>
-              <p>{user.address.city}</p>
-              <a>{user.email}</a>
+              <h1>{username}</h1>
+              <p>{address.city}</p>
+              <a>{email}</a>
             </div>
           </>
         );
@@ -20,3 +20,5 @@ export default function index() {
     </>
   );
 }
+
+
