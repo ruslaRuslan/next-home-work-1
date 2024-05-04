@@ -8,6 +8,9 @@ body {
   border: 2px solid grey;
 }
 
-h1{
+h1,
+p,
+a{
     cursor: pointer;
 }
+
