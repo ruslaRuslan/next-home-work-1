@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Users",
-  description: "isdifadeciler",
+  description: "Bu esas seyfedi",
 };
 
 export default function RootLayout({ children }) {
