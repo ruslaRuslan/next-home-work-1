@@ -7,10 +7,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <div>HEADER</div>
+        <div style={{ background: "blue", color: "#fff" }}>HEADER</div>
         {children}
-        FOOTER
-        </body>
+        <div style={{ background: "blue", color: "#fff" }}>FOOTER</div>
+      </body>
     </html>
   );
 }
